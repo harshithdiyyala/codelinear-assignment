@@ -205,19 +205,25 @@
   .checklist-section {
     grid-template-columns: 1fr;
     gap: 52px;
-    width: min(var(--max), calc(100vw - 48px));
+    width: 100vw;
     min-height: auto;
-    margin-left: auto;
-    padding: 82px 0;
-    overflow: visible;
+    margin-left: calc(50% - 50vw);
+    padding: 82px 24px;
+    overflow: hidden;
   }
 
-  .dark-feature .dashboard-wrap,
-  .checklist-section .dashboard-wrap {
-    justify-self: stretch;
-    width: 100%;
-    margin-right: 0;
+  .dark-feature .dashboard-wrap {
+    justify-self: end;
+    width: min(720px, 150vw);
+    margin-right: clamp(-360px, -52vw, -210px);
     margin-left: 0;
+  }
+
+  .checklist-section .dashboard-wrap {
+    justify-self: start;
+    width: min(720px, 150vw);
+    margin-right: 0;
+    margin-left: clamp(-360px, -52vw, -210px);
   }
 
   .checklist-section > div:last-child {
@@ -230,6 +236,17 @@
   .split,
   .check-grid {
     grid-template-columns: 1fr;
+  }
+
+  .dark-feature,
+  .checklist-section {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .dark-feature .dashboard-wrap,
+  .checklist-section .dashboard-wrap {
+    width: min(510px, 158vw);
   }
 
   .feature-copy p {

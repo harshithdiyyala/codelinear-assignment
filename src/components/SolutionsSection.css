@@ -66,13 +66,20 @@
   opacity: 1;
 }
 
+.solution-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 360px;
+  margin-bottom: 28px;
+}
+
 .solution-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 50px;
-  margin-bottom: 28px;
 }
 
 .solution-icon img {
@@ -86,6 +93,16 @@
 .solution-card:hover .solution-icon img {
   filter: drop-shadow(0 0 14px rgba(22, 201, 255, 0.48));
   transform: scale(1.04);
+}
+
+.solution-tag {
+  padding-top: 5px;
+  color: rgba(159, 176, 184, 0.62);
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: var(--font-control);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0;
 }
 
 .solution-card h3 {

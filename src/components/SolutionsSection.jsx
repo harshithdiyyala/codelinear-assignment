@@ -16,8 +16,11 @@ function SolutionsSection() {
       <div className="solution-grid">
         {solutions.map((solution) => (
           <article className="solution-card" key={solution.title}>
-            <div className="solution-icon" aria-hidden="true">
-              <img src={solution.icon} alt="" loading="lazy" />
+            <div className="solution-card-header">
+              <div className="solution-icon" aria-hidden="true">
+                <img src={solution.icon} alt="" loading="lazy" />
+              </div>
+              {solution.tag && <span className="solution-tag">{solution.tag}</span>}
             </div>
             <h3>{solution.title}</h3>
             <p>{solution.copy}</p>

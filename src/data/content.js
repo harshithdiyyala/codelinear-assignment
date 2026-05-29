@@ -41,11 +41,13 @@ export const solutions = [
   {
     title: 'Loan Origination System',
     icon: '/assets/solutions/loan-origination.svg',
+    tag: 'NBFC',
     copy: 'N7 brings full capabilities across strategy, human-centred design, operations, engineering and data science to create and deliver disruptive innovation. Our approach to building digital banks is specifically designed to help clients ',
   },
   {
     title: 'Loan Management System',
     icon: '/assets/solutions/loan-management.svg',
+    tag: 'NBFC',
     copy: 'N7 brings full capabilities across strategy, human-centred design, operations, engineering and data science to create and deliver disruptive innovation. Our approach to building digital banks is specifically designed to help clients ',
   },
 ];
